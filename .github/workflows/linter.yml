@@ -1,0 +1,36 @@
+name: 🛒 Vérification Liste de Courses
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+
+jobs:
+  check-format:
+    name: Vérifier le format de la liste
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v3
+
+      - name: Vérifier l'existence du fichier
+        run: |
+          if [ ! -f liste_courses.txt ]; then
+            echo " Erreur : Le fichier liste_courses.txt est introuvable !"
+            exit 1
+          fi
+
+      - name: Vérifier et trier la liste de courses
+        run: |
+          sort -u liste_courses.txt -o sorted_liste_courses.txt
+          if ! diff -q liste_courses.txt sorted_liste_courses.txt > /dev/null; then
+            echo " Erreur : liste_courses.txt n'est pas trié ou contient des doublons."
+            echo " Corrigez en exécutant : sort -u liste_courses.txt -o liste_courses.txt"
+            exit 1
+          fi
+
+      - name: Succès !
+        run: echo "La liste de courses est bien formatée !"
