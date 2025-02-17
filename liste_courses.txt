@@ -15,3 +15,5 @@ Café # Quantité : 250g
 ## Féculent
 Riz # Quantité : 1kg
 Pain de Mie # Quantité : 500g
+## Viandes
+Poulet # Quantité : 500g
