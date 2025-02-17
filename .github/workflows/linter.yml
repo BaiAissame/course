@@ -19,18 +19,22 @@ jobs:
       - name: Vérifier l'existence du fichier
         run: |
           if [ ! -f liste_courses.txt ]; then
-            echo " Erreur : Le fichier liste_courses.txt est introuvable !"
+            echo "❌ Erreur : Le fichier liste_courses.txt est introuvable !"
             exit 1
           fi
 
-      - name: Vérifier et trier la liste de courses
+      - name: Vérifier et supprimer les lignes vides
         run: |
-          sort -u liste_courses.txt -o sorted_liste_courses.txt
-          if ! diff -q liste_courses.txt sorted_liste_courses.txt > /dev/null; then
-            echo " Erreur : liste_courses.txt n'est pas trié ou contient des doublons."
-            echo " Corrigez en exécutant : sort -u liste_courses.txt -o liste_courses.txt"
+          grep -v '^[[:space:]]*$' liste_courses.txt > cleaned_liste_courses.txt
+          mv cleaned_liste_courses.txt liste_courses.txt
+          
+          if git diff --exit-code liste_courses.txt; then
+            echo "✅ Aucun espace inutile détecté."
+          else
+            echo "❌ Erreur : Des espaces inutiles ont été détectés et supprimés."
+            echo "Corrigez en exécutant : grep -v '^[[:space:]]*$' liste_courses.txt > temp && mv temp liste_courses.txt"
             exit 1
           fi
 
       - name: Succès !
-        run: echo "La liste de courses est bien formatée !"
+        run: echo "✅ La liste de courses est bien formatée !"
