@@ -21,3 +21,5 @@ Poulet # Quantité : 500g
 Lait # Quantité : 2L
 ## Légumes
 Tomates # Quantité : 8
+## Epices
+Paprika # Quantité : 50g
