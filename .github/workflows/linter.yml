@@ -23,16 +23,16 @@ jobs:
             exit 1
           fi
 
-      - name: Vérifier et supprimer les lignes vides
+      - name: Supprimer les lignes vides
         run: |
-          grep -v '^[[:space:]]*$' liste_courses.txt > cleaned_liste_courses.txt
-          mv cleaned_liste_courses.txt liste_courses.txt
+          sed -i '/^[[:space:]]*$/d' liste_courses.txt
           
+      - name: Vérifier si des modifications ont été faites
+        run: |
           if git diff --exit-code liste_courses.txt; then
             echo "✅ Aucun espace inutile détecté."
           else
-            echo "❌ Erreur : Des espaces inutiles ont été détectés et supprimés."
-            echo "Corrigez en exécutant : grep -v '^[[:space:]]*$' liste_courses.txt > temp && mv temp liste_courses.txt"
+            echo "❌ Erreur : Des espaces inutiles ont été supprimés."
             exit 1
           fi
 
