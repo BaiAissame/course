@@ -17,3 +17,5 @@ Riz # Quantité : 1kg
 Pain de Mie # Quantité : 500g
 ## Viandes
 Poulet # Quantité : 500g
+## Produits Laitiers
+Lait # Quantité : 2L
