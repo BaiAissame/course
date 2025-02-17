@@ -12,3 +12,5 @@ Légumes Surgelés # Quantité : 750g
 Lessive # Quantité : 3L
 ## Boissons
 Café # Quantité : 250g
+## Féculent
+Riz # Quantité : 1 kg
