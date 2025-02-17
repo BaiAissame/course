@@ -2,3 +2,5 @@
 Mangues # Quantité : 2
 ## Produits pour Animaux
 Croquettes pour chien # Quantité : 3kg
+## Snacks
+Chocolat Noir 70% # Quantité: 200g
