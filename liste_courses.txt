@@ -22,4 +22,4 @@ Lait # Quantité : 2L
 ## Légumes
 Tomates # Quantité : 8
 ## Epices
-Paprika # Quantité : 50g
+Piment # Quantité : 50g
