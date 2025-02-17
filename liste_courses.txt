@@ -4,3 +4,20 @@ Mangues # Quantité : 2
 Croquettes pour chien # Quantité : 3kg
 ## Snacks
 Chocolat Noir 70% # Quantité: 200g
+## Hygiène
+Gel Douche # Quantité : 500ml
+## Surgelés
+Légumes Surgelés # Quantité : 750g
+## Produits ménagers
+Lessive # Quantité : 3L
+## Boissons
+Café # Quantité : 250g
+## Féculent
+Riz # Quantité : 1kg
+Pain de Mie # Quantité : 500g
+## Viandes
+Poulet # Quantité : 500g
+## Produits Laitiers
+Lait # Quantité : 2L
+## Légumes
+Tomates # Quantité : 8
