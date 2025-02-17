@@ -19,3 +19,5 @@ Pain de Mie # Quantité : 500g
 Poulet # Quantité : 500g
 ## Produits Laitiers
 Lait # Quantité : 2L
+## Légumes
+Tomates # Quantité : 8
