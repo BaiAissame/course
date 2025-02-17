@@ -8,3 +8,5 @@ Chocolat Noir 70% # Quantité: 200g
 Gel Douche # Quantité : 500ml
 ## Surgelés
 Légumes Surgelés # Quantité : 750g
+## Produits ménagers
+Lessive # Quantité : 3L
