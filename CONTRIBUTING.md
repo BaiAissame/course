@@ -3,9 +3,6 @@
 
 ### Guide de Contribution
 
-
-```md
-
 Avant de contribuer, veuillez suivre les étapes ci-dessous pour assurer un workflow fluide et bien organisé.
 
 ## Règles générales
