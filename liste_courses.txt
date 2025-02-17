@@ -10,3 +10,5 @@ Gel Douche # Quantité : 500ml
 Légumes Surgelés # Quantité : 750g
 ## Produits ménagers
 Lessive # Quantité : 3L
+## Boissons
+Café # Quantité : 250g
